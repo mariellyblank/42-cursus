@@ -1,19 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/24 17:03:40 by mblank            #+#    #+#             */
-/*   Updated: 2022/10/26 11:37:14 by mblank           ###   ########.fr       */
+/*   Created: 2022/10/26 10:40:01 by mblank            #+#    #+#             */
+/*   Updated: 2022/10/26 12:49:29 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(int c)
+#include <stddef.h>
+
+size_t ft_strlen(const char *str)
 {
-	if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z')
-		return (1);
-	else
-		return (0);
+	size_t	c;
+
+	c = 0;
+	while (*str != '\0')
+	{
+		++c;
+		++ str;
+	}
+	return (c);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char str1[] = "a vida e maravilhosa";
+	printf("%ld", ft_strlen(str1));
+}*/

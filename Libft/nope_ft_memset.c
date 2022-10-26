@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/24 17:03:40 by mblank            #+#    #+#             */
-/*   Updated: 2022/10/26 11:37:14 by mblank           ###   ########.fr       */
+/*   Created: 2022/10/26 11:39:24 by mblank            #+#    #+#             */
+/*   Updated: 2022/10/26 12:40:15 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(int c)
+#include <stddef.h>
+
+void *ft_memset(void *s, int c, size_t n)
 {
-	if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z')
-		return (1);
-	else
-		return (0);
+	unsigned char	sc;
 }
+//impossivel sem saber corretamente pointers e memoria antes.s
+//estudar esses topicos
