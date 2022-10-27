@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/26 17:36:22 by mblank            #+#    #+#             */
-/*   Updated: 2022/10/27 14:00:49 by mblank           ###   ########.fr       */
+/*   Created: 2022/10/27 14:02:30 by mblank            #+#    #+#             */
+/*   Updated: 2022/10/27 16:46:46 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int ft_strcmp(const char *s1, const char *s2)
 {
-    if(c >= 65 && c <= 90)
-        return (c + 32);
-    return(c);
+	unsigned int	i;
+    unsigned int    n;
+	int				dif;
+
+	i = 0;
+	dif = 0;
+	while ((i < n) && !dif && (s1[i] != '\0') && (s2[i] != '\0'))
+	{
+		dif = ((unsigned char) s1[i] - (unsigned char) s2[i]);
+		i++;
+	}
+	if ((i < n) && !dif && ((s1[i] != '\0') || (s2[i] != '\0')))
+	{
+		dif = ((unsigned char) s1[i] - (unsigned char) s2[i]);
+	}
+	return (dif);
 }

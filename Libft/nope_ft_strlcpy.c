@@ -6,34 +6,38 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:40:28 by mblank            #+#    #+#             */
-/*   Updated: 2022/10/26 18:01:24 by mblank           ###   ########.fr       */
+/*   Updated: 2022/10/27 17:14:53 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <stdio.h>
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dst_size)
 {
-	
+	int i;
+    
+    i = 0;
+    if (dst_size == '\0')
+        return (0);
+    while( i < dst_size && src[i])
+    {
+       ((unsigned char *) dst)[i] = ((unsigned char *) src)[i];
+        i++;
+    }
+    return (dst[i]);
 }
 
-//possivel solucao para simplificar = usar unsigned char
-//pointers cast - search about it.
-
+/*#include <stdio.h>
 int	main(void)
 {
 	char a[] = "abcdef";
 	char b[] = "2222";
-	unsigned int x = 2;
-	unsigned int y = 1;
+    
+    ft_strlcpy(a, b, 3);
+    printf("%s", a);
+}*/
 
-	printf("%ld\n", ft_strlcpy(a, b, x));
-	printf("%ld", ft_strlcpy(a, b, y));
-}
-
-
-{
+/*{
 	size_t	i;
 	size_t	src_size;
 
@@ -51,4 +55,4 @@ int	main(void)
 		dst[i] = '\0';
 	}
 	return (src_size);
-}
+}*/
