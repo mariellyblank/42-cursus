@@ -6,11 +6,11 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 17:32:45 by mblank            #+#    #+#             */
-/*   Updated: 2022/10/31 14:10:53 by mblank           ###   ########.fr       */
+/*   Updated: 2022/10/31 17:42:05 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <libft.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

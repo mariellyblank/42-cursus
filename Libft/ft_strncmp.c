@@ -6,9 +6,11 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 14:02:30 by mblank            #+#    #+#             */
-/*   Updated: 2022/10/27 16:46:46 by mblank           ###   ########.fr       */
+/*   Updated: 2022/10/31 14:19:02 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <libft.h>
 
 int ft_strcmp(const char *s1, const char *s2)
 {

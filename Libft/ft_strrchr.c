@@ -1,21 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/24 17:03:40 by mblank            #+#    #+#             */
-/*   Updated: 2022/10/31 14:17:55 by mblank           ###   ########.fr       */
+/*   Created: 2022/10/31 15:22:43 by mblank            #+#    #+#             */
+/*   Updated: 2022/10/31 17:42:08 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
-
-int	ft_str_is_alpha(int c)
+#include <stdio.h>
+//function returns a pointer to the last occurrence of the character c in the string s.
+char	*ft_strrchr(const char *s, int c)
 {
-	if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z')
-		return (1);
-	else
-		return (0);
+	int		i;
+	char	chtr;
+	char	*str;
+
+	chtr = c;
+	str = (void *)s;
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	if (str[i] == chtr)
+	{
+		return (&str[i]);
+	}
+	return (NULL);
 }
+
+int	main(void)
+{
+	char	a[] = "245";
+	char	b[] = "925";
+	
+	printf("%s", ft_strchr(a, b));
+}
+

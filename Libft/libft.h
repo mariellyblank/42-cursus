@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 13:33:04 by mblank            #+#    #+#             */
-/*   Updated: 2022/10/31 14:10:29 by mblank           ###   ########.fr       */
+/*   Updated: 2022/10/31 17:42:11 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,12 @@
 #define LIBFT_H
 
 #include <unistd.h>
-#include <libft.h>
+#include <stdlib.h>
+#include <stddef.h>
+
+#define BUFFER_SIZE 1
+
+//Prototypes
 
 int	ft_isalnum(int c);
 int	ft_str_is_alpha(int c);
