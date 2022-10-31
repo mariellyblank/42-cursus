@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 17:32:45 by mblank            #+#    #+#             */
-/*   Updated: 2022/10/26 18:37:47 by mblank           ###   ########.fr       */
+/*   Updated: 2022/10/31 14:10:53 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 #include <stdio.h>
 int   main(void)
 {
-		char a[] = "acbkkkd";
+		char a[] = "acbkdddddddddddkkd";
 		char b[] = "efghijklkkkjjjjmn";
 				unsigned int    n = 6;
 		printf("%ld", ft_strlcat(a, b, n));
