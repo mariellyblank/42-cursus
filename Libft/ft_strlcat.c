@@ -6,11 +6,12 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 17:32:45 by mblank            #+#    #+#             */
-/*   Updated: 2022/10/31 17:42:05 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/02 11:40:35 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+/* #include <libft.h> */
+#include <stddef.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -33,11 +34,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (dst_len);
 }
 
-#include <stdio.h>
-int   main(void)
+/* #include <stdio.h>
+
+int	main(void)
 {
-		char a[] = "acbkdddddddddddkkd";
-		char b[] = "efghijklkkkjjjjmn";
-				unsigned int    n = 6;
-		printf("%ld", ft_strlcat(a, b, n));
+	char a[] = "acbkdddddddddddkkd";
+	char b[] = "efghijklkkkjjjjmn";
+			unsigned int    n = 6;
+	printf("%ld", ft_strlcat(a, b, n));
 }
+ */
