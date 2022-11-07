@@ -6,13 +6,13 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 10:40:01 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/02 11:31:42 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:53:10 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-size_t  ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	c;
 
