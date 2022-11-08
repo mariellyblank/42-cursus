@@ -1,43 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 18:18:33 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/08 11:57:58 by mblank           ###   ########.fr       */
+/*   Created: 2022/11/08 14:26:09 by mblank            #+#    #+#             */
+/*   Updated: 2022/11/08 16:09:26 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void	*ft_memchr(const void *s, int c, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
+	unsigned char	*ptr;
 	size_t			i;
-	unsigned char	*chr;
 
+	ptr = (unsigned char *)s;
 	i = 0;
-	chr = (unsigned char *)s;
-	while (i < n)
+	while (n < i)
 	{
-		if (chr[i] == (unsigned char)c)
-			return (&chr[i]);
-		i++;
+		*ptr = '\0';
+		ptr++;
 	}
-	return (NULL);
 }
+//solucao:usar memset '\0'!
+#include <stdlib.h>
+#include <string.h>
 
-/* #include <stdio.h>
+int main( void )
+  {
+    char buffer[80];
 
-int main () {
-   const char str[] = "http://www.tutorialspoint.com";
-   const char ch = '.';
-   char *ret;
-
-   ret = ft_memchr(str, ch, 11);
-
-   printf("String after |%c| is - |%s|\n", ch, ret);
-
-   return(0);
-} */
+    ft_bzero( buffer, 80 );
+    return EXIT_SUCCESS;
+  }

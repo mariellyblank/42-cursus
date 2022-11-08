@@ -1,43 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 18:18:33 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/08 11:57:58 by mblank           ###   ########.fr       */
+/*   Created: 2022/11/08 13:35:33 by mblank            #+#    #+#             */
+/*   Updated: 2022/11/08 14:18:29 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t			i;
-	unsigned char	*chr;
+	size_t	i;
+	size_t	y;
 
 	i = 0;
-	chr = (unsigned char *)s;
-	while (i < n)
+	if (little[0] == '\0')
+		return ((char *)big);
+	while (i < len && big[i] != '\0')
 	{
-		if (chr[i] == (unsigned char)c)
-			return (&chr[i]);
+		y = 0;
+		while (little[y] != '\0')
+		{
+			if (big[i + y] == little[y])
+				y++;
+			else
+				break ;
+		}
+		if (little[y] == '\0')
+			return ((char *) &big[i]);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
 
 /* #include <stdio.h>
 
-int main () {
-   const char str[] = "http://www.tutorialspoint.com";
-   const char ch = '.';
-   char *ret;
+int	main(void)
+{
+	char	a[] = "iaisuuuuuuuuuuiaijjjjjjjjj";
+	char	b[] = "su";
 
-   ret = ft_memchr(str, ch, 11);
-
-   printf("String after |%c| is - |%s|\n", ch, ret);
-
-   return(0);
+	printf("%s", ft_strnstr(a, b, 4));
 } */
