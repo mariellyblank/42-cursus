@@ -6,12 +6,12 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 15:22:43 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/02 17:40:47 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/09 12:32:36 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-//returns a pointer to the last occurrence of the char c in the string s
+#include "libft.h"
+
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*str;

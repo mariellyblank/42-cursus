@@ -6,11 +6,11 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:03:40 by mblank            #+#    #+#             */
-/*   Updated: 2022/10/31 14:17:55 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/09 12:30:29 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_str_is_alpha(int c)
 {

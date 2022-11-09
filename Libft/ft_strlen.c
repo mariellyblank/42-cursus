@@ -6,11 +6,11 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 10:40:01 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/07 15:53:10 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/09 12:32:07 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

@@ -6,11 +6,11 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:38:05 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/07 15:51:39 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/09 12:31:19 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

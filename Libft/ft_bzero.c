@@ -6,11 +6,11 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:26:09 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/08 16:36:44 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/09 18:03:39 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -19,11 +19,19 @@ void	ft_bzero(void *s, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		*(unsigned char *)(s + i) = '\0'; //ha necessidade de estudar essa estrutura de ptr
+		((char *)s)[i] = 0;
 		i++;
 	}
 }
 
+/* int main(void)
+{
+    char b[5] = "bzero";
+    
+    ft_bzero(b, 4);
+    return (0);
+    printf("%s", b);
+} */
 //solucao possivel vista em mais de um lugar :usar memset '\0'!
 //mas para isso, precisa botar makefile pra funcionar
 /* #include <stdio.h>
@@ -37,12 +45,13 @@ int main( void )
     printf("%s", str);
   } */
 //teste abaixo ainda nao esta bom, dda stack smashing detected
-#include <stdio.h>
+/* #include <stdio.h> */
 
-int	main(void)
+/* int	main(void)
 {
 	size_t n = 5;
 	char a[] = "cinc";
 	ft_bzero(a + 5, 3*sizeof(char)); //precisa verificar se esta correto chamar a afuncao assim
 	printf("%s", a);
 }
+ */

@@ -6,9 +6,11 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:15:56 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/07 13:22:40 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/09 12:30:13 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 

@@ -6,12 +6,11 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 11:56:55 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/02 12:20:39 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/09 12:31:44 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <libft.h> */
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
