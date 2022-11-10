@@ -6,12 +6,12 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 17:51:59 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/09 18:25:40 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/10 12:02:12 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//ta mal
+
 char	*strdup(const char *s)
 {
 	char	*str2;
@@ -19,6 +19,7 @@ char	*strdup(const char *s)
 	int		size;
 	
 	size = 0;
+    i = 0;
 	while (s[size])
 		size++;
 	if ((str2 = malloc(sizeof(char) * (size + 1))) == NULL)
@@ -31,8 +32,8 @@ char	*strdup(const char *s)
 	str2[i] = '\0';
 	return (str2);
 }
-//segmentation fault (core dumped)
-#include<stdio.h>
+
+/* #include<stdio.h>
 
 int main()
 {
@@ -45,3 +46,4 @@ int main()
     printf("%s", target);
     return 0;
 }
+ */
