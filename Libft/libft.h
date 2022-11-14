@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 13:33:04 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/07 13:25:57 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/14 18:00:10 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ int ft_strcmp(const char *s1, const char *s2);
 int ft_tolower(int c);
 int ft_toupper(int c);
 int	ft_atoi(const char *nptr);
+char **ft_split(char const *s, char c);
 
 #endif

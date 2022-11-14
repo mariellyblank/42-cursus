@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 11:55:36 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/09 12:31:09 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/14 17:58:18 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 /* #include <stdio.h>
 
-/* int main ()
+ int main ()
 {
   char buffer1[] = "DWAAOtP12df0";
   char buffer2[] = "DWaaOtP12df0";
