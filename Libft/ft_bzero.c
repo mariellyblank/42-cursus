@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:26:09 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/09 18:03:39 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/16 12:00:22 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int main( void )
 {
 	size_t n = 5;
 	char a[] = "cinc";
-	ft_bzero(a + 5, 3*sizeof(char)); //precisa verificar se esta correto chamar a afuncao assim
+	ft_bzero(a + 5, 3*sizeof(char));
 	printf("%s", a);
 }
  */
