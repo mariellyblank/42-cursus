@@ -6,13 +6,13 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:03:40 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/16 11:43:46 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/16 18:21:23 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_str_is_alpha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z' ) || (c >= 'a' && c <= 'z'))
 		return (1);
