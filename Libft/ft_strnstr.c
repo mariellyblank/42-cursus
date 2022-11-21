@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 13:35:33 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/09 12:32:22 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/21 15:11:15 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		y = 0;
 		while (little[y] != '\0')
 		{
-			if (big[i + y] == little[y])
+			if (big[i + y] == little[y] && (size_t)(i + y) < len)
 				y++;
 			else
 				break ;
@@ -34,7 +34,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			return ((char *) &big[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
 
 /* #include <stdio.h>

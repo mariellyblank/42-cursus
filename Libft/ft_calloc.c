@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:21:09 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/16 14:14:37 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/21 13:57:32 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_calloc(size_t nmem, size_t size)
 	mem = malloc (nmem * size);
 	i = 0;
 	if (!mem)
-		return (0);
+		return (NULL);
 	while (i < nmem * size)
 	{
 		mem[i] = 0;
