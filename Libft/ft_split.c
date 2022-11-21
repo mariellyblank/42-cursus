@@ -6,13 +6,13 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 12:20:47 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/21 15:38:13 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/21 16:00:05 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_count(const char *s, char c)
+int	ft_count(const char *s, char c)
 {
 	int	i;
 	int	chr;
