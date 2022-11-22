@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 12:20:47 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/21 16:00:05 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/22 13:49:19 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,6 @@ int	ft_count(const char *s, char c)
 		s++;
 	}
 	return (i);
-}
-
-static char *ft_words(const char *str, int start, int finish)
-{
-    
 }
 
 char	**ft_split(char const *s, char c)
