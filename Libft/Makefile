@@ -6,7 +6,7 @@
 #    By: mblank <mblank@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/31 13:28:54 by mblank            #+#    #+#              #
-#    Updated: 2022/11/24 16:27:09 by mblank           ###   ########.fr        #
+#    Updated: 2022/11/25 13:38:56 by mblank           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRCS = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c 
 OBJS = $(SRCS:.c=.o)
 
 BONUS			=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c\
-					ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
+					ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c\
 					
 BONUS_OBJS		= $(BONUS:.c=.o)
 
