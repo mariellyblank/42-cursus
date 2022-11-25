@@ -6,10 +6,17 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:15:56 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/21 15:10:50 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:16:15 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * It takes a string, and returns the integer value of that string
+ * 
+ * @param nptr This is the string that is to be converted to an integer.
+ * 
+ * @return the integer value of the string passed as argument.
+ */
 #include "libft.h"
 
 int	ft_atoi(const char *nptr)

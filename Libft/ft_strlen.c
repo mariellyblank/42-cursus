@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 10:40:01 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/09 12:32:07 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:36:20 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,3 @@ size_t	ft_strlen(const char *str)
 	}
 	return (c);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	char str1[] = "a vida e maravilhosa";
-	printf("%ld", ft_strlen(str1));
-}*/

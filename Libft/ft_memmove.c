@@ -6,10 +6,21 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:57:07 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/16 17:28:43 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:28:24 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * It copies the bytes from src to dest, but if the two regions overlap, 
+ * it copies the bytes in reverse order
+ * 
+ * @param dest is the destination array where the content is to be copied,
+ *  type-casted to a void*.
+ * @param src pointer to the source of data to be copied
+ * @param n the number of bytes to copy
+ * 
+ * @return A pointer to the destination string.
+ */
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
@@ -40,14 +51,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/* #include <stdio.h>
-
-int	main(void)
-{
-	size_t n = 5;
-	char a[] = "cinco letras trocadas";
-	char b[] = "banana final";
-	ft_memmove(a + 6, b, 5*sizeof(char));
-	printf("%s", a);
-} */

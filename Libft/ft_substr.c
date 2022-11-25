@@ -6,10 +6,21 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 12:02:52 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/21 15:13:11 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:39:35 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * If the string is longer than the length, return a substring of the string 
+ * from the start index to the end of the string, otherwise return a substring 
+ * of the string from the start index to the length.
+ * 
+ * @param s The string to be cut.
+ * @param start The starting index of the substring.
+ * @param len the maximum number of characters to copy
+ * 
+ * @return A pointer to a substring of the string pointed to by s.
+ */
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -40,19 +51,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str1[i] = '\0';
 	return (str1);
 }
-
-/* #include <stdio.h>
-int main()
-{
-	char src[] = "substr function Implementation";
- 
-	int m = 7;
-	int n = 12;
- 
-	char* dest = ft_substr(src, m, n);
- 
-	printf("%s\n", dest);
- 
-	return 0;
-}
- */

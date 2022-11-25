@@ -6,10 +6,21 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 12:10:52 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/23 11:14:31 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:38:57 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * It returns a copy of the string given as argument without whitespaces at 
+ * the beginning or at the end of the string. 
+ * Whitespaces are defined by the set argument
+ * 
+ * @param s1 The string to be trimmed.
+ * @param set The characters to be trimmed.
+ * 
+ * @return A pointer to a new string that is a copy of the string given as 
+ * argument, without whitespaces at the beginning or at the end of the string.
+ */
 #include "libft.h"
 
 int	ft_start(const char *s1, const char *set)

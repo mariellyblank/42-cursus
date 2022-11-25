@@ -6,10 +6,17 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 10:13:03 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/16 11:43:10 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:17:14 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * It returns 1 if the character is a digit or a letter, and 0 otherwise
+ * 
+ * @param c The character to be checked.
+ * 
+ * @return 1 if the character is alphanumeric, 0 if not.
+ */
 #include "libft.h"
 
 int	ft_isalnum(int c)

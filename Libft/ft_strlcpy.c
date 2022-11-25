@@ -6,10 +6,20 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:40:28 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/16 16:30:38 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:35:28 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * Copy the string pointed to by src, including the terminating null byte ('\0')
+ * to the buffer pointed to by dst
+ * 
+ * @param dst This is the destination string.
+ * @param src The string to be copied.
+ * @param dst_size The size of the destination buffer.
+ * 
+ * @return The length of the string src.
+ */
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dst_size)
@@ -30,34 +40,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dst_size)
 	}
 	return (ft_strlen(src));
 }
-
-/* size_t	ft_strlcpy(char *dst, const char *src, size_t dst_size)
-{
-	size_t	i;
-
-	i = 0;
-	if (!src || !dst)
-		return (0);
-	if (dst_size != 0)
-	{
-		while (i < (dst_size -1) && src[i] != '\0')
-		{
-			((unsigned char *) dst)[i] = ((unsigned char *) src)[i];
-			i++;
-		}
-		dst[i] = '\0';
-	}
-	else
-        return (0);
-    return (ft_strlen(src));
-}
- */
-/* #include <stdio.h>
-int	main(void)
-{
-	char a[] = "abcdef";
-	char b[] = "2222";
-	
-	ft_strlcpy(a, b, 3);
-	printf("%s", a);
-}*/

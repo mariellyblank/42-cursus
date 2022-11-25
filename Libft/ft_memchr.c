@@ -6,10 +6,22 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 18:18:33 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/09 12:31:00 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:22:44 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * It searches for the first occurrence of the character c (an unsigned char) in 
+ * the first n bytes of
+ * the string pointed to, by the argument str
+ * 
+ * @param s The string to search.
+ * @param c The character to search for.
+ * @param n The number of bytes to be searched
+ * 
+ * @return The address of the first occurrence of the character c in the first 
+ * n bytes of the string pointed to by s.
+ */
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
@@ -27,17 +39,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-/* #include <stdio.h>
-
-int main () {
-   const char str[] = "http://www.tutorialspoint.com";
-   const char ch = '.';
-   char *ret;
-
-   ret = ft_memchr(str, ch, 11);
-
-   printf("String after |%c| is - |%s|\n", ch, ret);
-
-   return(0);
-} */

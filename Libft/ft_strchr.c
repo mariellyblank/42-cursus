@@ -6,10 +6,17 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 11:56:55 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/09 12:31:44 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:32:54 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * returns a pointer to the first occurrence of the character c in the string s
+ * 
+ * @param s The string to be searched.
+ * @param c The character to search for.
+.
+ */
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
@@ -35,13 +42,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-/* int	main(void)
-{
-	const char	a[] = "huasu";
-	const char	b = 'u';
-
-	printf("%s", ft_strchr (a, b));
-	return (0);
-}
- */

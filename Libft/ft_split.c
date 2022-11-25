@@ -6,10 +6,19 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 12:20:47 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/23 11:11:32 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:31:48 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * It takes a string and a character, and returns an array of strings, 
+ * each of which is a word from the original string, separated by the character
+ * 
+ * @param s the string to be split
+ * @param c the character to split the string by
+ * 
+ * @return A pointer to a pointer to a char.
+ */
 #include "libft.h"
 
 int	ft_count(const char *s, char c)

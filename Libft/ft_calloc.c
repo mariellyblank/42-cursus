@@ -6,10 +6,19 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:21:09 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/21 13:57:32 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:26:29 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * It allocates memory for nmem elements of size size
+ * and then sets all of the memory to 0
+ * 
+ * @param nmem number of elements
+ * @param size The size of the memory block, in bytes.
+ * 
+ * @return A pointer to the allocated memory.
+ */
 #include "libft.h"
 
 void	*ft_calloc(size_t nmem, size_t size)
@@ -28,27 +37,3 @@ void	*ft_calloc(size_t nmem, size_t size)
 	}
 	return (mem);
 }
-
-/* #include <stdio.h>
-
-int main () {
-   int i, n;
-   int *a;
-
-   printf("Number of elements to be entered: 3");
-   scanf("%d",&n);
-
-   a = (int*)calloc(n, sizeof(int));
-   printf("Enter %d numbers:\n",n);
-   for( i=0 ; i < n ; i++ ) {
-	  scanf("%d",&a[i]);
-   }
-
-   printf("The numbers entered are: ");
-   for( i=0 ; i < n ; i++ ) {
-	  printf("%d ",a[i]);
-   }
-   free( a );
-   
-   return(0);
-} */

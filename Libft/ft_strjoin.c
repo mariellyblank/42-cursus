@@ -6,10 +6,19 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 15:13:29 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/16 11:53:42 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:34:05 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * The function ft_strjoin() takes two strings as parameters and returns 
+ * a new string that is the result of the concatenation of the two strings
+ * 
+ * @param s1 The first string to be joined.
+ * @param s2 The string to be appended to the end of s1.
+ * 
+ * @return A pointer to a string.
+ */
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -39,15 +48,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[y] = '\0';
 	return (str);
 }
-
-/* #include <stdio.h>
-int main()
-{
-	char s1[] = "peanut";
-	char s2[] = "butter";
-
-	printf("%s\n", ft_strjoin(s1, s2));
-
-	return 0;
-}
- */

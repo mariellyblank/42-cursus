@@ -6,10 +6,20 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 11:55:36 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/14 17:58:18 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:28:13 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * compares the first n bytes of memory area s1 against the first n bytes of 
+ * memory area s2
+ * 
+ * @param s1 This is the first string to be compared.
+ * @param s2 The string to compare to.
+ * @param n The number of bytes to compare.
+ * 
+ * @return The difference between the two strings.
+ */
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
@@ -30,22 +40,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/* #include <stdio.h>
-
- int main ()
-{
-  char buffer1[] = "DWAAOtP12df0";
-  char buffer2[] = "DWaaOtP12df0";
-
-  int n;
-
-  n=ft_memcmp ( buffer1, buffer2, sizeof(buffer1) );
-
-  if (n>0) printf ("'%s' is greater than '%s'.\n",buffer1,buffer2);
-  else if (n<0) printf ("'%s' is less than '%s'.\n",buffer1,buffer2);
-  else printf ("'%s' is the same as '%s'.\n",buffer1,buffer2);
-
-  return 0;
-}
- */

@@ -6,10 +6,17 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 10:25:44 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/09 12:30:52 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:19:30 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * If the character is between 32 and 126, return 1, otherwise return 0.
+ * 
+ * @param c The character to be checked.
+ * 
+ * @return 1 if the character is printable, 0 if not.
+ */
 #include "libft.h"
 
 int	ft_isprint(int c)

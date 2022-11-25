@@ -6,10 +6,16 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 11:57:41 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/23 14:38:25 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:29:07 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * The above function prints an integer to a file descriptor.
+ * 
+ * @param n The number to be printed.
+ * @param fd The file descriptor of the file to output to.
+ */
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)

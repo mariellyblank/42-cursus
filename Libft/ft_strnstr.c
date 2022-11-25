@@ -6,10 +6,21 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 13:35:33 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/21 15:11:15 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:37:48 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * It searches for the first occurrence of the string little in the string big,
+ * but only up to len characters
+ * 
+ * @param big the string to search in
+ * @param little the string to search for
+ * @param len the maximum number of characters to search
+ * 
+ * @return A pointer to the first occurrence of the substring little in the 
+ * string big, or NULL if the substring is not found.
+ */
 #include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
@@ -36,13 +47,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-/* #include <stdio.h>
-
-int	main(void)
-{
-	char	a[] = "iaisuuuuuuuuuuiaijjjjjjjjj";
-	char	b[] = "su";
-
-	printf("%s", ft_strnstr(a, b, 4));
-} */

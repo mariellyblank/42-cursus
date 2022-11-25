@@ -6,10 +6,20 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:38:05 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/09 12:31:19 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:23:38 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * Copy n bytes from memory area src to memory area dest
+ * 
+ * @param dest This is the destination array where the content is to be copied, 
+ * type-casted to a pointer.
+ * @param src The source string.
+ * @param n the number of bytes to copy
+ * 
+ * @return A pointer to the destination string.
+ */
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
@@ -30,14 +40,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/* #include <stdio.h>
-
-int	main(void)
-{
-	size_t n = 5;
-	char a[] = "cinco letras trocadas";
-	char b[] = "banana final";
-	ft_memcpy(a + 6, b, 5*sizeof(char));
-	printf("%s", a);
-} */

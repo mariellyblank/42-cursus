@@ -6,10 +6,18 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 13:33:34 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/22 13:38:46 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/25 16:19:43 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * It takes an integer and returns a string representation of that integer
+ * 
+ * @param n the number to be converted
+ * @param str the string to be returned
+ * 
+ * @return A pointer to a string.
+ */
 #include "libft.h"
 
 char	*ft_lenregr(long long n, char *str)
