@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:40:28 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/25 16:35:28 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/28 15:46:33 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dst_size)
 {
 	size_t	i;
 
-	if (!dst || !src)
-		return (0);
 	i = 0;
 	if (dst_size != 0)
 	{

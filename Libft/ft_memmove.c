@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:57:07 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/25 16:28:24 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/28 15:31:58 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	i = 0;
 	dest_ptr = (char *)dest;
 	src_ptr = (const char *)src;
+	if (!dest && !src)
+		return (NULL);
 	if (dest_ptr <= src_ptr)
 	{
 		while (i < n)
@@ -45,9 +47,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		dest_ptr += n;
 		src_ptr += n;
 		while (n--)
-		{
 			*(--dest_ptr) = *(--src_ptr);
-		}
 	}
 	return (dest);
 }

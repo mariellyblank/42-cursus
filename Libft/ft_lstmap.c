@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 13:39:20 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/25 16:27:54 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/28 16:52:33 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,19 +31,19 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new;
 	t_list	*adress;
 
-	if (!f)
+	if (!f || !del)
 		return (NULL);
 	new = NULL;
 	while (lst)
 	{
-		new = ft_lstnew(f(lst->content));
-		if (!new)
+		adress = ft_lstnew(f(lst->content));
+		if (!adress)
 		{
 			ft_lstclear(&new, del);
-			return (NULL);
+			return (0);
 		}
-		ft_lstadd_back(&adress, new);
+		ft_lstadd_back(&new, adress);
 		lst = lst->next;
 	}
-	return (adress);
+	return (new);
 }

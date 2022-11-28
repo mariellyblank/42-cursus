@@ -6,7 +6,7 @@
 /*   By: mblank <mblank@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 12:10:52 by mblank            #+#    #+#             */
-/*   Updated: 2022/11/25 16:38:57 by mblank           ###   ########.fr       */
+/*   Updated: 2022/11/28 16:10:48 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,13 +63,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	start = ft_start(s1, set);
 	end = ft_end(s1, set);
-	str = (char *)malloc(sizeof(char) * (end - start + 1));
-	if (!s1 || !str)
+	if (!s1)
 		return (NULL);
 	if (!set)
 		return (ft_strdup(s1));
 	if (start >= end)
 		return (ft_strdup(""));
+	str = (char *)malloc(sizeof(char) * (end - start + 1));
+	if (!str)
+		return (NULL);
 	ft_strlcpy (str, s1 + start, end - start + 1);
 	return (str);
 }
