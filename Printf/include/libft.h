@@ -1,1 +1,0 @@
-(incluir todos os dados do libft.h aki)

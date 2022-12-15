@@ -6,12 +6,11 @@
 /*   By: mblank <mblank@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 17:34:15 by mblank            #+#    #+#             */
-/*   Updated: 2022/12/12 17:43:44 by mblank           ###   ########.fr       */
+/*   Updated: 2022/12/15 16:38:33 by mblank           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdlib.h>
 
 int	ft_num_len(unsigned	int num)
 {
@@ -56,7 +55,7 @@ int	ft_print_unsigned(unsigned int n)
 	else
 	{
 		num = ft_uitoa(n);
-		print_length += ft_printstr(num);
+		print_length += ft_putstr(num);
 		free(num);
 	}
 	return (print_length);
